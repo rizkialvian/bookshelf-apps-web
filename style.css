@@ -1,0 +1,184 @@
+* {
+    padding: 5px;
+    border-radius: 5px;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    display: flex;
+    background-color: cornflowerblue;
+    padding: 12px;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+main {
+    padding: 20px;
+    overflow: auto;
+    line-height: 25px;
+    margin-bottom: 15px;
+}
+
+.sisi-kiri {
+    float: left;
+    width: 40%;
+}
+
+.sisi-kanan {
+    float: right;
+    width: 60%;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 15px;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+h2 {
+    color: cornflowerblue;
+    text-align: center;
+}
+
+/*BAGIAN CARI BUKU*/
+.search_section {
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0;
+    align-items: center;
+    border: 1px solid cornflowerblue;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.search_section form {
+    padding: 15px;
+    width: 100%;
+    display: grid;
+    grid-gap: 10px;
+}
+
+.search_section form button {
+    background-color: chartreuse;
+    color: white;
+    border: 0;
+    border-radius: 5px;
+    display: block;
+    width: 100%;
+    padding: 8px;
+    cursor: pointer;
+}
+
+/*BAGIAN INPUT BUKU*/
+.input_section {
+
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    border: 1px solid cornflowerblue;
+    border-radius: 10px;
+}
+
+.input_section form .input {
+    margin: 8px 0;
+}
+
+.input_section form .input input {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.input_section form .input_inline {
+    margin: 12px 0;
+    display: flex;
+    align-items: center;
+}
+
+.input_section form .input_inline label {
+    color: cornflowerblue;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.input_section form button {
+    background-color: chartreuse;
+    color: white;
+    border: 0;
+    border-radius: 5px;
+    display: block;
+    width: 100%;
+    padding: 8px;
+    cursor: pointer;
+}
+
+/*BAGIAN BOOK SHELF*/
+.book_shelf {
+    margin: 15px 0 0 0;
+    border: 1px solid cornflowerblue;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+h3, p {
+    font-size: large;
+}
+
+.red {
+    width: 40px;
+    height: 40px;
+
+    background: url('../assets/trash-outline.svg');
+    background-size: contain;
+    margin-left: 16px;
+    cursor: pointer;
+    border: none;
+}
+
+.gren-uncomplete {
+    width: 40px;
+    height: 40px;
+
+    background: url('../assets/check-solid.svg');
+    background-size: contain;
+    margin-left: 16px;
+    cursor: pointer;
+    border: none;
+}
+
+.gren-complete {
+    width: 40px;
+    height: 40px;
+
+    background: url('../assets/check-outline.svg');
+    background-size: contain;
+    margin-left: 16px;
+    cursor: pointer;
+    border: none;
+}
+
+/*MENGATUR FOOTER*/
+footer {
+    background-color: gray;
+    padding: 30px;
+    text-align: center;
+}
+footer small {
+    color:white;
+}
+
+/*MENGATUR LAYAR RESPONSIVE*/
+@media screen and (max-width: 700px) {
+    .sisi-kanan, .sisi-kiri {
+        width: 100%;
+        padding: 0;
+    }
+}
